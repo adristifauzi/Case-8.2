@@ -34,6 +34,7 @@ def runCommand(command):
     #elif command == 5:
         #return countBytes(path)
     #elif command == 6:
+        #target = input('please input target name file: [example: smpl.htm]')
         #return findFiles(target, path)
     elif command == 7:
         print("Выход из программы.")
@@ -61,6 +62,7 @@ def moveUp(): #перейти на уровень вверх
     os.chdir(str)
     print((str))
     runCommand(acceptCommand())
+
     
 def countFiles(path):
     #path = 'C:/Positronx/Python/Scripts/' (EXAMPLE)
@@ -75,7 +77,7 @@ def countFiles(path):
     print('Total number of files',totalFiles)
     print('Total Number of directories',totalDir)
     print('Total:',(totalDir + totalFiles))
-
+    
 def countBytes(path): #Нужны значения пути из первого шага (command = 1)
     """Returns the `directory` size in bytes."""
     total = 0
